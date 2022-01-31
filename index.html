@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Form</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <aside>
+      <div class="logo-container">
+        <img class="logo" src="/odin-lined.png" alt="logo" />
+        <h2 class="logo-text">ODIN</h2>
+      </div>
+      <div class="photo-credits">
+        Photo by
+        <a
+          href="https://unsplash.com/@dylu?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+          >Jacek Dylag</a
+        >
+        on
+        <a
+          href="https://unsplash.com/s/photos/growing?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+          >Unsplash</a
+        >
+      </div>
+    </aside>
+    <main>
+      <div class="text-container">
+        <h3>
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams.
+          <h3>Sign up <em>now</em> to get started</h3>
+        </h3>
+        <h3>You <em>know</em> you want to.</h3>
+      </div>
+      <form>
+        <h3>Let's do this!</h3>
+        <div class="input-fields">
+          <label
+            >first name
+            <input type="text" />
+          </label>
+          <label
+            >Last name
+            <input type="text" />
+          </label>
+          <label
+            >email
+            <input type="email" />
+          </label>
+          <label
+            >phone number
+            <input type="tel" />
+          </label>
+          <label
+            >password
+            <input type="password" required minlength="0" id="password-input" />
+            <span id="error"></span>
+          </label>
+          <label
+            >confirm password
+            <input type="password" required id="confirm-password-input" />
+          </label>
+        </div>
+        <hr />
+        <button type="submit">Create Account</button>
+      </form>
+      <p>Already have an account?</p>
+      <a href="#">Log in</a>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
